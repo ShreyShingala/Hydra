@@ -1,0 +1,3 @@
+([('watchdog',
+   '/Users/shrey/Downloads/Coding/April-Fools-Virus/dist/watchdog',
+   'EXECUTABLE')],)

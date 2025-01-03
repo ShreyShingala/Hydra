@@ -1,0 +1,3 @@
+([('hydra',
+   '/Users/shrey/Downloads/Coding/April-Fools-Virus/dist/hydra',
+   'EXECUTABLE')],)
