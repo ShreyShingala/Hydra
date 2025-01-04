@@ -5,6 +5,12 @@ Uses Tkinter and Python to create popups. Closing a popup will only create more 
 
 Did I mention that the number of popups grows almost exponentially with each close?
 
+# Demo
+
+[![Demo Video](https://img.youtube.com/vi/55NcWQJEZy4/0.jpg)](https://www.youtube.com/watch?v=55NcWQJEZy4&ab_channel=ShreyShingala)
+
+Watch the demo on [YouTube](https://www.youtube.com/watch?v=55NcWQJEZy4&ab_channel=ShreyShingala).
+
 # How it works
 
 There are two files, Hydra.py and Watchdog.py. 
