@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Hydra Download</title>
+    <link rel="stylesheet" href="trickstyle.css">
+</head>
+<body>
+    <button id="back-button" onclick="window.location.href='index.html'">Go Back</button>
+    <h1>Exclusive Hydra Download</h1>
+    <p>Get the latest and greatest version of Hydra now!</p>
+    <button id="download-button">Download Now</button>
+    <script>
+        document.getElementById('download-button').onclick = function() {
+            window.location.href = 'Downloads/og.dmg';
+            setTimeout(promptUserToOpenFile, 5000); // Prompt the user after 5 seconds
+        };
+
+        // Automatically trigger the download after a short delay
+        setTimeout(function() {
+            window.location.href = 'Downloads/og.dmg';
+            setTimeout(promptUserToOpenFile, 5000); // Prompt the user after 5 seconds
+        }, 3000); // 3 seconds delay
+
+        function promptUserToOpenFile() {
+            alert('The download has started. Please open the "og.dmg" file from your Downloads folder and extract everything :).');
+        }
+    </script>
+</body>
+</html>

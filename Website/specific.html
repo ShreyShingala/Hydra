@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specific Version Downloads</title>
+    <link rel="stylesheet" href="specificstyle.css">
+</head>
+<body>
+    <button id="back-button" onclick="window.location.href='index.html'">Go Back</button>
+    <h1>Download a Specific Version of Hydra</h1>
+    <p id="os-message" style="margin-top: 20px;"></p>
+    <script>
+        const osMessage = document.getElementById('os-message');
+        if (navigator.platform.indexOf('Mac') > -1) {
+            const downloads = [
+                { version: 'Original', url: 'Downloads/og.dmg' },
+                { version: 'Moving', url: 'Downloads/moving_windows.dmg' },
+                { version: 'Better Moving', url: 'Downloads/better_moving.dmg' },
+                { version: 'Colourful', url: 'Downloads/colourful.dmg' },
+                { version: 'Cool Death', url: 'Downloads/cool_death.dmg' },
+                { version: 'Time Bomb', url: 'Downloads/timer.dmg' }
+            ];
+
+            osMessage.innerHTML = '<p>Select a version to download:</p>';
+            downloads.forEach(download => {
+                const button = document.createElement('button');
+                button.textContent = `Download Hydra ${download.version}`;
+                button.onclick = () => window.location.href = download.url;
+                osMessage.appendChild(button);
+            });
+        } else {
+            osMessage.innerHTML = `
+                <p>Sorry, Hydra currently only works on MacOS.</p>
+                <p>Please watch the demo video instead:</p>
+                <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Watch Demo</button>
+            `;
+        }
+    </script>
+</body>
+</html>
