@@ -1,4 +1,4 @@
-# April-Fools-Virus
+# Hydra
 A small April Fools prank made by yours truly
 
 Uses Tkinter and Python to create popups. Closing a popup will only create more popups, unless the correct password is inputted. Trying to quit using task manager will not work 💀, they will have to either restart their computer or find the password.
